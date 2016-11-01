@@ -91,13 +91,14 @@ class ErrorHandler(object):
     }
 
     def raise_error(self, error):
-        response = json.loads(error.read().decode('UTF-8'))
         try:
+            error_msg = error.read()
+            response = json.loads(error_msg.decode('UTF-8'))
             raise self._error_map[response['error']['id']](
                 error.code,
                 error.msg,
                 response
             )
-        except KeyError:
+        except (KeyError, ValueError):
             raise error
 

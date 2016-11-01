@@ -2,13 +2,13 @@ from setuptools import find_packages
 from setuptools import setup
 
 setup(
-    name='yelp-v3',
+    name='yelp3',
 
     version='1.0.0',
 
     description='Python implementation of the Yelp V3 Fusion API',
 
-    url='https://github.com/af-inet/python-yelp-v3',
+    url='https://github.com/af-inet/python-yelp3',
 
     author='David Hargat',
 

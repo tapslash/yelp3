@@ -3,7 +3,7 @@
 import json
 
 from six.moves import urllib as urllib
-from yelp.errors import ErrorHandler
+from yelp3.errors import ErrorHandler
 
 API_HOST = 'api.yelp.com'
 BUSINESS_SEARCH_PATH = '/v3/businesses/search'
@@ -40,7 +40,8 @@ class Client(object):
             self._error_handler.raise_error(error)
 
         try:
-            response = json.loads(conn.read().decode('utf-8'))
+            data = conn.read()
+            response = json.loads(data.decode('utf-8'))
         finally:
             conn.close()
 

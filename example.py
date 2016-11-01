@@ -1,4 +1,4 @@
-from yelp.client import Client
+from yelp3.client import Client
 
 YELP_ACCESS_TOKEN = "YOUR-ACCESS-TOKEN"
 
