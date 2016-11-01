@@ -8,7 +8,7 @@ setup(
 
     description='Python implementation of the Yelp V3 Fusion API',
 
-    url='https://github.com/af-inet/python-yelp3',
+    url='https://github.com/af-inet/yelp3-python',
 
     author='David Hargat',
 
