@@ -23,36 +23,53 @@ class Client(object):
         self._error_handler = ErrorHandler()
         self.debug = debug
 
-
     def business_search(self, **url_params):
-        return self._make_request(path = BUSINESS_SEARCH_PATH, url_params = dict(**url_params))
-
+        return self._make_request(
+            path = BUSINESS_SEARCH_PATH,
+            url_params = dict(**url_params)
+        )
 
     def phone_search(self, **url_params):
-        return self._make_request(path = PHONE_SEARCH_PATH, url_params = dict(**url_params))
-
+        return self._make_request(
+            path = PHONE_SEARCH_PATH,
+            url_params = dict(**url_params)
+        )
 
     def transaction_search(self, transaction_type, **url_params):
-        return self._make_request(path = TRANSACTION_SEARCH_PATH.format(transaction_type=transaction_type), url_params = dict(**url_params))
+        return self._make_request(
+            path = TRANSACTION_SEARCH_PATH.format(
+                transaction_type = transaction_type
+            ),
+            url_params = dict(**url_params)
+        )
 
 
     def business(self, _id, **url_params):
-        return self._make_request(path = BUSINESS_PATH.format(id=_id), url_params = dict(**url_params))
-
+        return self._make_request(
+            path = BUSINESS_PATH.format(
+                id = _id
+            ),
+            url_params = dict(**url_params)
+        )
 
     def review(self, _id, **url_params):
-        return self._make_request(path = REVIEWS_PATH.format(id=_id), url_params = dict(**url_params))
-
+        return self._make_request(
+            path = REVIEWS_PATH.format(
+                id = _id
+            ),
+            url_params = dict(**url_params)
+        )
 
     def autocomplete(self, **url_params):
-        return self._make_request(path = AUTOCOMPLETE_PATH, url_params = dict(**url_params))
-
+        return self._make_request(
+            path = AUTOCOMPLETE_PATH,
+            url_params = dict(**url_params)
+        )
     
     @staticmethod
     def _filter_dict(old_dict, cb):
         """ Returns a filtered dictionary based on the result of `cb(key)`. """
         return {k: v for k, v in old_dict.items() if cb(k)}
-
     
     def _make_request(self, path, url_params={}):
 
@@ -89,5 +106,4 @@ class Client(object):
             conn.close()
 
         return response
-
 
