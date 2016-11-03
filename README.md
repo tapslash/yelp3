@@ -29,11 +29,11 @@ print(resp)
 
 ## notes
 
-Getting a v3 access token from yelp:
+Getting a v3 access token from Yelp:
 
 - https://www.yelp.com/developers/documentation/v3/get_started
 
-Don't forget to check out other yelp v2 api's:
+Yelp v2 APIs:
 
 - https://github.com/Yelp/yelp-python
 
