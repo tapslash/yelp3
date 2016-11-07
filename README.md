@@ -2,7 +2,7 @@
 
 WIP Python implementation of [Yelp's V3 Fusion API](https://www.yelp.com/developers/documentation/v3/).
 
-`git clone "https://github.com/af-inet/yelp3-python"`
+`git clone "https://github.com/tapslash/yelp3-python"`
 
 ## Installation
 

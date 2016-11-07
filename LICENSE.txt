@@ -1,4 +1,4 @@
-Copyright (c) 2016 David Hargat
+Copyright (c) 2016 Search and Share Inc.
 
 MIT License
 

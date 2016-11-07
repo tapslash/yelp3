@@ -4,11 +4,11 @@ from setuptools import setup
 setup(
     name='yelp3',
 
-    version='1.0.0',
+    version='1.0.1',
 
     description='Python implementation of the Yelp V3 Fusion API',
 
-    url='https://github.com/af-inet/yelp3-python',
+    url='https://github.com/tapslash/yelp3-python',
 
     author='David Hargat',
 
