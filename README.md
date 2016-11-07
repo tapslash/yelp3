@@ -4,6 +4,12 @@ WIP Python implementation of [Yelp's V3 Fusion API](https://www.yelp.com/develop
 
 `git clone "https://github.com/af-inet/yelp3-python"`
 
+## Installation
+
+Install yelp3 from PyPI using:
+
+`pip install yelp3`
+
 ## running the example
 
 1. Replace `YOUR-ACCESS-TOKEN` in `example.py` with your access token.

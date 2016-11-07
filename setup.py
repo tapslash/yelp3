@@ -14,7 +14,7 @@ setup(
 
     author_email='davidmhargat@gmail.com',
 
-    license='n/a',
+    license='MIT',
 
     keywords='yelp',
 
